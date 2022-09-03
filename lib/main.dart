@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hospital/models/login_model.dart';
-
+import 'package:flutter_hospital/models/register_model.dart';
+import 'package:flutter_hospital/network/remote/services/register_service.dart';
 import 'network/remote/services/login_service.dart';
-import 'on_boarding_screen.dart';
-
+import 'package:flutter_hospital/models/appointment_model.dart';
+import 'modules/on_boarding_screen.dart';
+import 'network/remote/services/appointment_service.dart';
 void main() async{
  WidgetsFlutterBinding.ensureInitialized();
-Attendee attendee= await LoginService.loginService();
-print(attendee.name);
+ // Login login= await LoginService.loginService();
+ // Appointment appointment = await AppointmentService.appointmentService();
+ // Register register = await RegisterService.registerService();
   runApp(const MyApp());
 }
 

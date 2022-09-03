@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'Button.dart';
-import 'style.dart';
+import '../layout/Button.dart';
+import '../shared/style.dart';
 
 class Onboarding_Screen extends StatefulWidget {
   @override
@@ -87,9 +87,9 @@ class _Onboarding_Screen extends State<Onboarding_Screen> {
                       Padding(
                         padding: const EdgeInsets.all(40.0),
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
-                            Center(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children:  <Widget>[
+                            const Center(
                               child: Image(
                                 image: AssetImage(
                                   'assets/images/onboarding0.png',
@@ -98,15 +98,18 @@ class _Onboarding_Screen extends State<Onboarding_Screen> {
                                 width: 300.0,
                               ),
                             ),
-                            SizedBox(height: 30.0),
+
+                            const SizedBox(height: 80.0),
+
                             Text(
                               'welcome you are in HIS APP',
-                              style: kTitleStyle,
+                              style: googleTopicWhite,
                             ),
-                            SizedBox(height: 15.0),
-                            Text(
-                              'Hope you find our app do well ,and help you to do what you want',
-                              style: kSubtitleStyle,
+                            const SizedBox(height: 20.0),
+                             Text(
+                              'Hope you find our app do well ,and help '
+                                  'you to do what you want',
+                              style: googleBodyWhite,
                             ),
                           ],
                         ),
@@ -116,8 +119,8 @@ class _Onboarding_Screen extends State<Onboarding_Screen> {
                         padding: const EdgeInsets.all(40.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
-                          children: const <Widget>[
-                            Center(
+                          children:  <Widget>[
+                            const Center(
                               child: Image(
                                 image: AssetImage(
                                   'assets/images/onboarding1.png',
@@ -126,16 +129,16 @@ class _Onboarding_Screen extends State<Onboarding_Screen> {
                                 width: 300.0,
                               ),
                             ),
-                            SizedBox(height: 30.0),
+                            const SizedBox(height: 80.0),
                             Text(
                               'Know more about us ',
-                              style: kTitleStyle,
+                              style: googleTopicWhite,
                             ),
-                            SizedBox(height: 15.0),
+                            const SizedBox(height: 20.0),
                             Text(
                               'The application provides you with browsing and knowing services, '
                               'choosing a doctor, services and appropriate reservations to save time and effort',
-                              style: kSubtitleStyle,
+                              style: googleBodyWhite,
                             ),
                           ],
                         ),
@@ -143,9 +146,9 @@ class _Onboarding_Screen extends State<Onboarding_Screen> {
                       Padding(
                         padding: const EdgeInsets.all(40.0),
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
-                            Center(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children:  <Widget>[
+                            const Center(
                               child: Image(
                                 image: AssetImage(
                                   'assets/images/onboarding2.png',
@@ -154,15 +157,15 @@ class _Onboarding_Screen extends State<Onboarding_Screen> {
                                 width: 300.0,
                               ),
                             ),
-                            SizedBox(height: 30.0),
+                            const SizedBox(height: 80.0),
                             Text(
                               'Lets Start',
-                              style: kTitleStyle,
+                              style: googleTopicWhite,
                             ),
-                            SizedBox(height: 15.0),
+                             const SizedBox(height: 20.0),
                             Text(
                               'Lets find out everything',
-                              style: kSubtitleStyle,
+                              style: googleBodyWhite,
                             ),
                           ],
                         ),

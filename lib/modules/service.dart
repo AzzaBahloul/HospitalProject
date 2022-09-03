@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hospital/Appointment.dart';
-import 'style.dart';
+import 'package:flutter_hospital/modules/Appointment.dart';
+import '../shared/style.dart';
 
 class Service extends StatelessWidget {
   const Service({Key? key}) : super(key: key);
@@ -9,7 +9,7 @@ class Service extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Service page'),
+        title:  Text('Service page',style: googleTopicWhite,),
         backgroundColor: const Color(0xFF144CA8),
       ),
       body: ListView(children: [
@@ -24,11 +24,13 @@ class Service extends StatelessWidget {
           ),
           //service
           Container(
-            padding: const EdgeInsets.all(2),
-            color: const Color(0xFF144CA8),
-            child: const Text(
+              decoration:  const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(5)),
+                color:  Color(0xFF144CA8),),
+            padding: const EdgeInsets.all(4),
+            child:  Text(
               'Services',
-              style: kTitleStyle,
+              style: googleTopicWhite,
             ),
           ),
           const SizedBox(
@@ -58,13 +60,15 @@ class Service extends StatelessWidget {
                 //1
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child: const Text(
                       ' Annual Physicals',
                       style: kSubtitleStyle,
                     ),
-                    color: const Color(0xFF144CA8),
                   ),
                 ),
                 const SizedBox(
@@ -73,24 +77,28 @@ class Service extends StatelessWidget {
                 //2
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child: const Text(' Birth to college Well-Baby Checkups',
                         style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 //3
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child:
                         const Text(' Asthma Management', style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
                   ),
                 ),
                 const SizedBox(
@@ -99,10 +107,12 @@ class Service extends StatelessWidget {
                 //4
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child: const Text('Immunizations', style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
                   ),
                 ),
                 const SizedBox(
@@ -111,11 +121,12 @@ class Service extends StatelessWidget {
                 //5
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
-                    child: const Text('Colds and Flu', style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                    child: const Text('Colds and Flu', style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -123,12 +134,13 @@ class Service extends StatelessWidget {
                 //6
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child: const Text('Hearing and Vision Checks',
-                        style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                        style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -136,12 +148,13 @@ class Service extends StatelessWidget {
                 //7
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child: const Text('Nutrition and Weight Management',
-                        style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                        style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -149,12 +162,13 @@ class Service extends StatelessWidget {
                 //8
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child: const Text('Infectious diseases',
-                        style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                        style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -162,12 +176,13 @@ class Service extends StatelessWidget {
                 //9
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child: const Text('Developmental-behavioral Issues',
-                        style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                        style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -175,12 +190,13 @@ class Service extends StatelessWidget {
                 //10
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child: const Text('Pediatric Gastroenterology',
-                        style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                        style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -188,11 +204,12 @@ class Service extends StatelessWidget {
                 //11
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
-                    child: const Text('Diabetes', style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                    child: const Text('Diabetes', style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -200,11 +217,12 @@ class Service extends StatelessWidget {
                 //12
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
-                    child: const Text('Allergies', style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                    child: const Text('Allergies', style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -212,11 +230,12 @@ class Service extends StatelessWidget {
                 //13
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
-                    child: const Text('x_Rays', style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                    child: const Text('x_Rays', style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 20,
@@ -224,12 +243,13 @@ class Service extends StatelessWidget {
                 //14
                 Card(
                   child: Container(
+                    decoration:  const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                      color:  Color(0xFF144CA8),),
                     padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     child:
-                        const Text('Telephone Triage', style: kSubtitleStyle),
-                    color: const Color(0xFF144CA8),
-                  ),
+                        const Text('Telephone Triage', style: kSubtitleStyle),),
                 ),
                 const SizedBox(
                   height: 60,

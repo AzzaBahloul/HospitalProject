@@ -1,11 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_hospital/Appointment.dart';
-import 'package:flutter_hospital/Home.dart';
-import 'package:flutter_hospital/Sign.dart';
-import 'package:flutter_hospital/service.dart';
-import 'package:flutter_hospital/style.dart';
+import 'package:flutter_hospital/modules/Appointment.dart';
+import 'package:flutter_hospital/modules/Home.dart';
+import 'package:flutter_hospital/modules/Sign.dart';
+import 'package:flutter_hospital/modules/service.dart';
+import 'package:flutter_hospital/shared/style.dart';
 
-import 'Doctor.dart';
+import '../modules/Doctor.dart';
 
 class Button extends StatefulWidget {
   const Button({Key? key}) : super(key: key);
@@ -30,15 +31,30 @@ class _ButtonState extends State<Button> {
           child: Column(
             children: [
               Container(
-                color: const Color(0xFFE1E5E7),
+                decoration:  const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    stops: [0.1, 0.4, 0.7, 0.9],
+                    colors: [
+                      Color(0xFFBADCF7),
+                      Color(0xFFACD4F3),
+                      Color(0xFF98C5E7),
+                      Color(0xFF86C0ED),
+                    ],
+                  ),
+                ),
                 width: double.infinity,
                 child: Padding(
                   padding: const EdgeInsets.all(20),
                   child: Column(
                     children: [
+
                       const SizedBox(
                         height: 35,
                       ),
+                      //Home
                       ElevatedButton.icon(
                         onPressed: () {
                           Navigator.of(context)

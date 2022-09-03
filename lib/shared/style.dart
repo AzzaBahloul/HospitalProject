@@ -1,4 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+var googleTopicWhite = GoogleFonts.abel(
+  fontWeight: FontWeight.bold,
+  color: Colors.white,
+  fontSize: 25.0,
+  height: 1.5,
+);
+var googleTopicBlue = GoogleFonts.abel(
+  fontWeight: FontWeight.bold,
+  color: const Color(0xFF0E3B85),
+  fontSize: 25.0,
+  height: 1.5,
+);
+
+var googleBodyWhite = GoogleFonts.abel(
+  fontWeight: FontWeight.normal,
+  color: Colors.white,
+  fontSize: 16.0,
+  height: 1.2,
+);
+var googleBodyBlue = GoogleFonts.abel(
+  fontWeight: FontWeight.normal,
+  color: const Color(0xFF0E3B85),
+  fontSize: 16.0,
+  height: 1.2,
+);
 
 const kTitleStyle = TextStyle(
   color: Colors.white,

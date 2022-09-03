@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hospital/service.dart';
+import 'package:flutter_hospital/modules/service.dart';
 void main(){
   runApp(const Doctor());
 }

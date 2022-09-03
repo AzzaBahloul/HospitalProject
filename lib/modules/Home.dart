@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hospital/style.dart';
+import 'package:flutter_hospital/shared/style.dart';
 
 import 'service.dart';
 
@@ -10,9 +10,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           'Home Page',
-
+          style: googleTopicWhite,
         ),
         backgroundColor: const Color(0xFF144CA8),
       ),
@@ -27,20 +27,20 @@ class Home extends StatelessWidget {
               width: 300.0,
             ),
           ),
-          const Center(
+           Center(
             child: Text(
               'The overView of HIS',
-              style: texthome,
+              style: googleTopicBlue,
             ),
           ),
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
+            children:  [
               Padding(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 child: Center(
                   child: Text(
                     'Welcome to The overView of HIS. '
@@ -52,11 +52,7 @@ class Home extends StatelessWidget {
                     '(334) 745-4660. A nurse or doctor will call back within 30 minutes. For EMERGENCY situation, you should dial 911.'
                     ' If your child ingests poison or chemicals, you should call Poison Control at (800) 292-6678 or 911 first. They will '
                     'instruct you how to seek immediate medical attention',
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Color(0xFF144CA8),
-                      wordSpacing: 8,
-                    ),
+                    style: googleBodyBlue
                   ),
                 ),
               ),

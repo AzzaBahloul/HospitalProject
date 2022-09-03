@@ -24,7 +24,7 @@ class API {
     String? token,
   }) async {
     Map<String, String> headers = {};
-    headers.addAll({'Content-Type': 'application/x-www-form-urlencoded'});
+    headers.addAll({'Content-Type': 'application/row'});
     if (token != null) {
       headers.addAll({'Authorization': 'Bearer $token'});
     }
