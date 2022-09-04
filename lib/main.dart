@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_hospital/models/login_model.dart';
 import 'package:flutter_hospital/models/register_model.dart';
@@ -9,8 +11,14 @@ import 'network/remote/services/appointment_service.dart';
 void main() async{
  WidgetsFlutterBinding.ensureInitialized();
  // Login login= await LoginService.loginService();
- // Appointment appointment = await AppointmentService.appointmentService();
  // Register register = await RegisterService.registerService();
+ try{
+   Appointment appointment = await AppointmentService.appointmentService();
+ }on SocketException catch(error){
+   print(error.message);
+ } catch(error){
+   print(error.toString());
+ }
   runApp(const MyApp());
 }
 
@@ -20,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'qr bar code ui',
+      title: 'HIS',
       debugShowCheckedModeBanner: false,
       home: Onboarding_Screen(),
     );

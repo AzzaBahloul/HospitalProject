@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 
 class API {
  static Future postData({required String url, required dynamic body}) async {
+   print('1');
     http.Response response = await http.post(
       Uri.parse(url),
       body: jsonEncode(body),
@@ -11,7 +12,9 @@ class API {
         'Content-Type': 'application/json',
       },
     );
+    print('2');
     if (response.statusCode == 200) {
+      print('3');
       return jsonDecode(response.body);
     } else {
       throw Exception('${response.statusCode} && ${response.body}');
