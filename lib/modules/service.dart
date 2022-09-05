@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hospital/modules/Annual_Physicals.dart';
+import 'package:flutter_hospital/modules/services/Allergies.dart';
+import 'package:flutter_hospital/modules/services/Annual_Physicals.dart';
 import 'package:flutter_hospital/modules/Appointment.dart';
+import 'package:flutter_hospital/modules/services/AsthmaManagement.dart';
+import 'package:flutter_hospital/modules/services/Cardiology.dart';
+import 'package:flutter_hospital/modules/services/Diabetes.dart';
+import 'package:flutter_hospital/modules/services/Gastroenterology.dart';
+import 'package:flutter_hospital/modules/services/HearingVision.dart';
+import 'package:flutter_hospital/modules/services/Immunizations.dart';
+import 'package:flutter_hospital/modules/services/InfectiousDiseases.dart';
+import 'package:flutter_hospital/modules/services/TelephoneTriage.dart';
+import 'package:flutter_hospital/modules/services/X-Rays.dart';
+import 'package:flutter_hospital/modules/services/behavioral.dart';
+import 'package:flutter_hospital/modules/services/cold.dart';
 import '../shared/style.dart';
 
 class Service extends StatelessWidget {
@@ -54,10 +66,146 @@ class Service extends StatelessWidget {
             padding: const EdgeInsets.all(17),
             child: Column(
               children: [
-                //1
                 ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:   Text('x_Rays', style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const Rays();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:    Text('Diabetes', style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const Diabetes();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:    Text('Allergies', style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const Allergies();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:    Text('Cardiology', style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const Cardiology();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:   Text('Colds and Flu', style: kSubtitleStyle,),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const Cold();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:   Text(' Immunizations', style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const Immunizations();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:    Text('Gastrointestinal', style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const Gastroenterology();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:   Text('Telephone Triage', style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const TelephoneTriage();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
                   child:  const Padding(
                     padding:   EdgeInsets.all(8.0),
                     child:  Text(
@@ -75,7 +223,24 @@ class Service extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                //2
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:    Text('Infectious diseases',
+                        style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const Infectious();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
                 ElevatedButton(
                   style: ButtonStyle(
                       backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
@@ -89,204 +254,52 @@ class Service extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context)
                         .push(MaterialPageRoute(builder: (_) {
-                      return const AnnualPhysicals();
+                      return const AsthmaManagement();
                     }));
                   },
                 ),
                 const SizedBox(
                   height: 20,
                 ),
-                //3
                 ElevatedButton(
                   style: ButtonStyle(
                       backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
                   child:  const Padding(
                     padding:   EdgeInsets.all(8.0),
-                    child:   Text(' Immunizations', style: kSubtitleStyle),
+                    child:    Text('Hearing and Vision Checks',
+                        style: kSubtitleStyle),
                   ),
                   onPressed: () {
                     Navigator.of(context)
                         .push(MaterialPageRoute(builder: (_) {
-                      return const AnnualPhysicals();
+                      return const HearingVision();
                     }));
                   },
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor:  MaterialStateProperty.all(const Color(0xFF144CA8),)),
+                  child:  const Padding(
+                    padding:   EdgeInsets.all(8.0),
+                    child:    Text(' Developmental-behavioral Issues',
+                        style: kSubtitleStyle),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) {
+                      return const BehavioralIssues();
+                    }));
+                  },
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
 
 
-                const SizedBox(
-                  height: 20,
-                ),
-                //4
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text('Colds and Flu', style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //5
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text('Hearing and Vision Checks',
-                        style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //6
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text('Nutrition and Weight Management',
-                        style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //7
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text('Infectious diseases',
-                        style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //8
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text(' Developmental-behavioral Issues',
-                        style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //9
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child:
-                        const Text('Gastrointestinal', style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //10
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text('Cardiology', style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //11
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text('Diabetes', style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //12
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text('Allergies', style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //13
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: const Text('x_Rays', style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                //14
-                Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(4)),
-                      color: Color(0xFF144CA8),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child:
-                        const Text('Telephone Triage', style: kSubtitleStyle),
-                  ),
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
+
               ],
             ),
           ),

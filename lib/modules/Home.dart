@@ -42,16 +42,9 @@ class Home extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(12),
                 child: Center(
-                  child: Text(
-                    'Welcome to The overView of HIS. '
-                    'By selecting the Pediatric Clinic, you can feel comfortable you have made the best decision. '
-                    'We go beyond taking care of children when they are ill; we emphasize maintaining their health and monitoring their '
-                    'growth and development from infancy into early adulthood. Our telephones are answered Monday through Friday 7:30 a.m. '
-                    '- 7:30 p.m., Saturdays 8:00 a.m. - 4:30 p.m., Sundays 12:00 pm - 4:30 p.m. & Holidays 12:00 p.m. '
-                    '- until. If you have an urgent (but NOT emergent) medical problem after hours, dial our after hours answering service at '
-                    '(334) 745-4660. A nurse or doctor will call back within 30 minutes. For EMERGENCY situation, you should dial 911.'
-                    ' If your child ingests poison or chemicals, you should call Poison Control at (800) 292-6678 or 911 first. They will '
-                    'instruct you how to seek immediate medical attention',
+                  child: Text('Welcome to El-Nasser Hospital where each and every person is special. is a tertiary care, private hospital with a multidisciplinary approach, integrating medical services with cutting edge technology, covering more than 30 specialities at the outpatient centre. Our telephones are answered Monday through Friday 7:30 a.m. - 7:30 p.m., Saturdays 8:00 a.m. - 4:30 p.m., Sundays 12:00 pm - 4:30 p.m. & Holidays 12:00 p.m. - until. If you have an urgent (but NOT emergent) medical problem after hours, dial our after hours answering service at (334) 745-4660. A nurse or doctor will call back within 30 minutes. For EMERGENCY situation, you should dial 911. If your child ingests poison or chemicals, you should call Poison Control at (800) 292-6678 or 911 first. They will instruct you how to seek immediate medical attention.'
+
+    ,
                     style: googleBodyBlue
                   ),
                 ),
