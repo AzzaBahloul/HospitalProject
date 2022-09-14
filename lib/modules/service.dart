@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hospital/modules/Home.dart';
 import 'package:flutter_hospital/modules/services/Allergies.dart';
 import 'package:flutter_hospital/modules/services/Annual_Physicals.dart';
-import 'package:flutter_hospital/modules/Appointment.dart';
 import 'package:flutter_hospital/modules/services/AsthmaManagement.dart';
 import 'package:flutter_hospital/modules/services/Cardiology.dart';
 import 'package:flutter_hospital/modules/services/Diabetes.dart';
@@ -311,7 +311,7 @@ class Service extends StatelessWidget {
         child: const Icon(Icons.arrow_forward_ios_sharp),
         onPressed: () =>
             Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-          return const Appointment();
+          return const Home();
         })),
       ),
     );

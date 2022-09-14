@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_hospital/modules/Appointment.dart';
 import 'package:flutter_hospital/modules/Home.dart';
-import 'package:flutter_hospital/modules/Sign.dart';
-import 'package:flutter_hospital/modules/register.dart';
+import 'package:flutter_hospital/modules/department.dart';
 import 'package:flutter_hospital/modules/service.dart';
 import 'package:flutter_hospital/shared/style.dart';
 
@@ -76,17 +74,35 @@ class _ButtonState extends State<Button> {
                           const SizedBox(
                             height: 30,
                           ),
+                          //department
+                          ElevatedButton.icon(
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .push(MaterialPageRoute(builder: (_) {
+                                return const Home();
+                              }));
+                            },
+                            icon: const Icon(Icons.home),
+                            label: const Text(
+                              'Home Page',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            style: button,
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ),
                           //service
                           ElevatedButton.icon(
                               onPressed: () {
                                 Navigator.of(context)
                                     .push(MaterialPageRoute(builder: (_) {
-                                  return const Service();
+                                  return const Department();
                                 }));
                               },
-                              icon: const Icon(Icons.add_outlined),
+                              icon: const Icon(Icons.airline_seat_flat_angled_sharp,),
                               label: const Text(
-                                'Service Page',
+                                'Department ',
                                 style: TextStyle(color: Colors.white),
                               ),
                               style: button),
@@ -104,57 +120,6 @@ class _ButtonState extends State<Button> {
                               icon: const Icon(Icons.check),
                               label: const Text(
                                 'Doctor Page ',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              style: button),
-                          const SizedBox(
-                            height: 30,
-                          ),
-                          //register
-                          ElevatedButton.icon(
-                              onPressed: () {
-                                Navigator.of(context)
-                                    .push(MaterialPageRoute(builder: (_) {
-                                  return const RegisterScreen();
-                                }));
-                              },
-                              icon: const Icon(Icons.app_registration),
-                              label: const Text(
-                                'Register page',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              style: button),
-                          const SizedBox(
-                            height: 30,
-                          ),
-                          //appointment
-                          ElevatedButton.icon(
-                              onPressed: () {
-                                Navigator.of(context)
-                                    .push(MaterialPageRoute(builder: (_) {
-                                  return const SignScreen();
-                                }));
-                              },
-                              icon: const Icon(Icons.edit),
-                              label: const Text(
-                                'Sign up Page',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              style: button),
-                          const SizedBox(
-                            height: 30,
-                          ),
-                          //sign up
-                          ElevatedButton.icon(
-                              onPressed: () {
-                                Navigator.of(context)
-                                    .push(MaterialPageRoute(builder: (_) {
-                                  return const Appointment();
-                                }));
-                              },
-                              icon: const Icon(Icons.topic),
-                              label: const Text(
-                                'Appointment ',
                                 style: TextStyle(color: Colors.white),
                               ),
                               style: button),
