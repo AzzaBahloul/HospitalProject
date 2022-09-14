@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hospital/layout/Button.dart';
 import 'package:flutter_hospital/shared/style.dart';
 
 class About_Us extends StatelessWidget {
@@ -55,6 +56,15 @@ class About_Us extends StatelessWidget {
             ),
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: const Color(0xFF0E3B85),
+        focusColor: Colors.lightBlueAccent,
+        child: const Icon(Icons.arrow_forward_ios_sharp),
+        onPressed: () =>
+            Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+              return const Button();
+            })),
       ),
     );
   }
