@@ -27,7 +27,7 @@ class _DentalState extends State<Dental> {
                     radius: 100,
                     backgroundImage:
                     AssetImage(
-                      'assets/images/i2.jpg',
+                      'assets/images/Dental.jpg',
                     ),
                   ),
                   const SizedBox(height: 20,),

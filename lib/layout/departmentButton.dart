@@ -1,26 +1,28 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_hospital/modules/Home.dart';
-import 'package:flutter_hospital/modules/about_Us.dart';
-import 'package:flutter_hospital/modules/department.dart';
+import 'package:flutter_hospital/modules/department/Traumatology.dart';
+import 'package:flutter_hospital/modules/department/Urology.dart';
 import 'package:flutter_hospital/shared/style.dart';
-
 import '../modules/Doctor.dart';
+import '../modules/department/Cardiology.dart';
+import '../modules/department/Dental.dart';
+import '../modules/department/Neurologist.dart';
+import '../modules/department/Pediatric.dart';
+import '../modules/department/Pulmonary.dart';
 
-class Button extends StatefulWidget {
-  const Button({Key? key}) : super(key: key);
+class DepartmentButton extends StatefulWidget {
+  const DepartmentButton({Key? key}) : super(key: key);
 
   @override
-  _ButtonState createState() => _ButtonState();
+  DepartmentButtonState createState() => DepartmentButtonState();
 }
 
-class _ButtonState extends State<Button> {
+class DepartmentButtonState extends State<DepartmentButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Application content',
+          'Department content',
         ),
         backgroundColor: const Color(0xFF0E3B85),
       ),
@@ -62,12 +64,12 @@ class _ButtonState extends State<Button> {
                             onPressed: () {
                               Navigator.of(context)
                                   .push(MaterialPageRoute(builder: (_) {
-                                return const Home();
+                                return const Cardiology();
                               }));
                             },
-                            icon: const Icon(Icons.home),
+                            icon: const Icon(Icons.arrow_forward_ios),
                             label: const Text(
-                              'Home Page',
+                              'Cardiology',
                               style: TextStyle(color: Colors.white),
                             ),
                             style: button,
@@ -80,12 +82,29 @@ class _ButtonState extends State<Button> {
                             onPressed: () {
                               Navigator.of(context)
                                   .push(MaterialPageRoute(builder: (_) {
-                                return const Home();
+                                return const Dental();
                               }));
                             },
-                            icon: const Icon(Icons.home),
+                            icon: const Icon(Icons.arrow_forward_ios),
                             label: const Text(
-                              'Home Page',
+                              'Dental page',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            style: button,
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ),
+                          ElevatedButton.icon(
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .push(MaterialPageRoute(builder: (_) {
+                                return const Urology();
+                              }));
+                            },
+                            icon: const Icon(Icons.arrow_forward_ios),
+                            label: const Text(
+                              'Urology page',
                               style: TextStyle(color: Colors.white),
                             ),
                             style: button,
@@ -98,12 +117,12 @@ class _ButtonState extends State<Button> {
                               onPressed: () {
                                 Navigator.of(context)
                                     .push(MaterialPageRoute(builder: (_) {
-                                  return const Department();
+                                  return const Neurologist();
                                 }));
                               },
-                              icon: const Icon(Icons.airline_seat_flat_angled_sharp,),
+                              icon: const Icon(Icons.arrow_forward_ios,),
                               label: const Text(
-                                'Department ',
+                                '  Neurologist ',
                                 style: TextStyle(color: Colors.white),
                               ),
                               style: button),
@@ -115,12 +134,12 @@ class _ButtonState extends State<Button> {
                               onPressed: () {
                                 Navigator.of(context)
                                     .push(MaterialPageRoute(builder: (_) {
-                                  return const Doctor();
+                                  return const Pediatric();
                                 }));
                               },
-                              icon: const Icon(Icons.check),
+                              icon: const Icon(Icons.arrow_forward_ios),
                               label: const Text(
-                                'Doctor Page ',
+                                'Pediatric page ',
                                 style: TextStyle(color: Colors.white),
                               ),
                               style: button),
@@ -132,12 +151,46 @@ class _ButtonState extends State<Button> {
                             onPressed: () {
                               Navigator.of(context)
                                   .push(MaterialPageRoute(builder: (_) {
-                                return const About_Us();
+                                return const Pulmonary();
                               }));
                             },
-                            icon: const Icon(Icons.phone_forwarded_outlined),
+                            icon: const Icon(Icons.arrow_forward_ios),
                             label: const Text(
-                              'About US page',
+                              'Pulmonary page',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            style: button,
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ),
+                          ElevatedButton.icon(
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .push(MaterialPageRoute(builder: (_) {
+                                return const Traumatology();
+                              }));
+                            },
+                            icon: const Icon(Icons.arrow_forward_ios),
+                            label: const Text(
+                              'Traumatology',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            style: button,
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ),
+                          ElevatedButton.icon(
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .push(MaterialPageRoute(builder: (_) {
+                                return const Urology();
+                              }));
+                            },
+                            icon: const Icon(Icons.arrow_forward_ios),
+                            label: const Text(
+                              'Urology page',
                               style: TextStyle(color: Colors.white),
                             ),
                             style: button,
@@ -165,8 +218,8 @@ class _ButtonState extends State<Button> {
         child: const Icon(Icons.arrow_forward_ios_sharp),
         onPressed: () =>
             Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-          return const Home();
-        })),
+              return const Doctor();
+            })),
       ),
     );
   }

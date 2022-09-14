@@ -27,7 +27,7 @@ class _CardiologyState extends State<Cardiology> {
                     radius: 100,
                     backgroundImage:
                     AssetImage(
-                      'assets/images/i2.jpg',
+                      'assets/images/Cardiology.jpg',
                     ),
                   ),
                   const SizedBox(height: 20,),

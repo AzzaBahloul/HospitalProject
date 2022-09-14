@@ -21,13 +21,15 @@ class _NeurologistState extends State<Neurologist> {
               child: Column(
                 children: [
                   const SizedBox(height: 35,),
-                  ElevatedButton(onPressed: (){}, child: Text('Department ELnaaser Hospital ',style: googleTopicWhite,),style: ButtonStyle(backgroundColor:MaterialStateProperty.all(const Color(0xFF144CA8),) ,),),
+                  ElevatedButton(onPressed: (){},
+                    child: Text('Department ELnaaser Hospital ',style: googleTopicWhite,),
+                    style: ButtonStyle(backgroundColor:MaterialStateProperty.all(const Color(0xFF144CA8),) ,),),
                   const SizedBox(height: 20,),
                   const CircleAvatar(
                     radius: 100,
                     backgroundImage:
                     AssetImage(
-                      'assets/images/i2.jpg',
+                      'assets/images/Neurologist.jpg',
                     ),
                   ),
                   const SizedBox(height: 20,),

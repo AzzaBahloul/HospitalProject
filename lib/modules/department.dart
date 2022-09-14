@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hospital/layout/departmentButton.dart';
 import 'package:flutter_hospital/modules/department/Cardiology.dart';
 import 'package:flutter_hospital/shared/style.dart';
 
@@ -91,7 +92,7 @@ class _DepartmentState extends State<Department> {
         backgroundColor: const Color(0xFF0E3B85),
         focusColor: Colors.lightBlueAccent,
         child: const Icon(Icons.send_rounded),
-        onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_){return const Cardiology();})),
+        onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_){return const DepartmentButton();})),
       ),
     );
   }
